@@ -2,8 +2,8 @@ const video = document.getElementById('video');
 
 // Load models
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.ageGenderNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('models'),
+  faceapi.nets.ageGenderNet.loadFromUri('models')
 ]).then(startVideo);
 
 // Start webcam
@@ -43,8 +43,8 @@ video.addEventListener('play', () => {
 
 // Load models
 // Promise.all([
-//   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-//   faceapi.nets.ageGenderNet.loadFromUri('/models')
+//   faceapi.nets.tinyFaceDetector.loadFromUri('models'),
+//   faceapi.nets.ageGenderNet.loadFromUri('models')
 // ]).then(startVideo);
 
 // // Start webcam
