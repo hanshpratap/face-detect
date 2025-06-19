@@ -70,16 +70,16 @@
     async function loadModels() {
       try {
         updateStatus('Loading Tiny Face Detector model...');
-        await faceapi.loadTinyFaceDetectorModel('/models');
+        await faceapi.loadTinyFaceDetectorModel('models');
         
         updateStatus('Loading Age and Gender model...');
-        await faceapi.loadAgeGenderModel('/models');
+        await faceapi.loadAgeGenderModel('models');
         
         updateStatus('Loading Face Expression model...');
-        await faceapi.loadFaceExpressionModel('/models');
+        await faceapi.loadFaceExpressionModel('models');
         
         updateStatus('Loading Face Recognition model...');
-        await faceapi.loadFaceRecognitionModel('/models');
+        await faceapi.loadFaceRecognitionModel('models');
         
         updateStatus('All models loaded successfully!');
         document.getElementById('loading').style.display = 'none';
